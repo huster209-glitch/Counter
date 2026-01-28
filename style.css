@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+.count {
+    width: 500px;
+    margin: auto;
+    margin-top: 300px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.btns {
+    display: flex;
+    gap: 30px;
+}
+
+.btns button {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 13px;
+    font-size: 25px;
+    color: white;
+}
+
+.plus, .minus {
+    background-color: dodgerblue;
+}
+
+.toZero {
+    background-color: darkgreen;
+}
