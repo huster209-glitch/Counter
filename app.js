@@ -1,24 +1,27 @@
 const heading = document.getElementById("number");
-let history = document.getElementById("history");
-let massiv = [];
+const tarix = document.getElementById("history");
+const tarixMassiv = [];
 let currentValue = parseInt(heading.textContent);
 
 function incrementCounter() {
     currentValue++;
     heading.textContent = currentValue;
     updateColor(currentValue);
+    showHistory(currentValue);
 }
 
 function decrementCounter() {
     currentValue--;
     heading.textContent = currentValue;
     updateColor(currentValue);
+    showHistory(currentValue);
 }
 
 function toZero() {
     currentValue = 0;
     heading.textContent = currentValue;
     updateColor(currentValue);
+    showHistory(currentValue);
 }
 
 function updateColor(value) {
@@ -27,4 +30,7 @@ function updateColor(value) {
     else heading.style.color = "black";
 }
 
-// massiv.push(heading);
+function showHistory(son) {
+    tarixMassiv.push(son);
+    tarix.textContent = "Tarix: " + tarixMassiv.toString();
+}
